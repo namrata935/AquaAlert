@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('flood3.jpg') no-repeat center center fixed;
+  background-size: cover; /* Ensure the image covers the entire screen */
+  color: white;
+}
+
+/* Add a pseudo-element to apply the blur effect to the background */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit; /* Use the same background as the body */
+  background-size: cover; /* Match the original background size */
+  filter: blur(2px); /* Apply the blur effect */
+  z-index: -1; /* Ensure it stays in the background */
+}
+
+div.stApp {
+  z-index: 1; /* Ensure content stays above the background */
+}
+
+
