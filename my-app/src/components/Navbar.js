@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css"; // Create a CSS file for styling the navbar
+import "./Navbar.css"; // Ensure the CSS file is linked
 
 const Navbar = () => {
+  const [showDropdown, setShowDropdown] = useState(false);
+
   return (
     <div className="navbar">
       <div className="navbar-logo">AquaAlert</div>
@@ -14,6 +16,21 @@ const Navbar = () => {
         <Link to="/community-forum">Community Forum</Link>
         <Link to="/donation">Donation</Link>
         <Link to="/safety-guidelines">Safety Guidelines</Link>
+
+        {/* Volunteers Dropdown */}
+        <div
+          className="volunteers-dropdown"
+          onMouseEnter={() => setShowDropdown(true)}
+          onMouseLeave={() => setShowDropdown(false)}
+        >
+          <span>Volunteers</span>
+          {showDropdown && (
+            <div className="dropdown-content">
+              <Link to="/find-volunteers">Find Volunteers</Link>
+              <Link to="/register-volunteer">Register as Volunteer</Link>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
