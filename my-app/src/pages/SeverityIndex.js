@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { fetchWeatherData } from "../utils/fetchWeather";
 import { calculateSeverityIndex } from "../utils/calculateSeverity";
+import "../styles//SeverityIndex.css";
 
 const SeverityIndex = () => {
   const [location, setLocation] = useState("");
