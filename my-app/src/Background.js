@@ -26,12 +26,15 @@ const Background = () => {
 
   const style = {
     backgroundImage: getBackground(),
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    height: '100vh', // Make the background take the full height of the screen
-    position: 'absolute', // Fix the background to the page
-    width: '100%',
-    zIndex: -1, // Ensure the background is behind all other content
+    backgroundSize: 'cover',  // Ensure the background fills the screen
+    backgroundPosition: 'center',  // Keep the background centered
+    backgroundAttachment: 'fixed',  // Fix the background so it stays in place when scrolling
+    height: '100%',  // Take the full height of the page
+    width: '100%',  // Ensure the background covers full width
+    position: 'absolute',  // Position it as a background
+    top: 0,  // Align to the top of the page
+    left: 0,  // Align to the left of the page
+    zIndex: -1,  // Ensure the background is behind all content
   };
 
   return <div style={style}></div>;
