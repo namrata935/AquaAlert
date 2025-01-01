@@ -12,7 +12,7 @@ import "./App.css";
 import {store} from './forum/src/app/store.js'
 import Background from './Background';
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import SeverityIndex from './pages/SeverityIndex.js'
 
 const App = () => {
   return (
@@ -28,9 +28,10 @@ const App = () => {
             <Route path="/register-volunteer" element={<RegisterVolunteers />} />
             <Route path="/find-volunteer" element={<FindVolunteers />} />
             <Route path="/community-forum" element={<CommunityForum />} />
-            <Route path="/community-forum" element={<CommunityForum />} />
             <Route path="/donation" element={<Donation />} />
             <Route path="/safety-guidelines" element={<SafetyGuidelines />} />
+            <Route path="/severity-index" element={<SeverityIndex />} />
+
           </Routes>
         </div>
       </div>

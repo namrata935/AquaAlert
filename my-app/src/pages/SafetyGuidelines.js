@@ -1,70 +1,86 @@
 import React from 'react';
 import '../styles/SafetyGuidelines.css';
 
-function SafetyGuidelines() {
+const SafetyGuidelines = () => {
   return (
-    <div className="safety-guidelines">
-      <h2>Flood Safety Guidelines</h2>
+    <div className="safety-container">
+      <h1 className="safety-title">Flood Safety Guidelines</h1>
       
-      <section className="guidelines-section">
-        <h3>Before a Flood</h3>
+      <div className="guidelines-section">
+        <h2>Before a Flood</h2>
         <ul>
-          <li className="important">Prepare an emergency kit with:
-            <ul className="sub-list">
-              <li>Drinking water and non-perishable food</li>
-              <li>First aid supplies and medications</li>
-              <li>Battery-powered radio and flashlights</li>
-              <li>Extra batteries and power banks</li>
-            </ul>
-          </li>
-          <li>Know your evacuation route and have a family communication plan</li>
+          <li>Create an emergency kit with essential supplies</li>
+          <li>Know your area's flood risk and evacuation routes</li>
           <li>Keep important documents in a waterproof container</li>
-          <li>Monitor local news and weather updates</li>
-          <li>Move valuable items to higher levels</li>
+          <li>Install check valves in plumbing to prevent backups</li>
+          <li>Monitor local weather updates and warnings</li>
         </ul>
-      </section>
+        <div className="video-embed">
+    <h3>Watch: How to Prepare for a flood</h3>
+    <iframe 
+      width="560" 
+      height="315" 
+      src="https://www.youtube.com/embed/43M5mZuzHF8?si=E_RdK8IFlrtaX6j2" 
+      title="Emergency Kit Preparation"
+      frameBorder="0" 
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+      allowFullScreen>
+    </iframe>
+  </div>
+      </div>
 
-      <section className="guidelines-section">
-        <h3>During a Flood</h3>
+      <div className="guidelines-section">
+        <h2>During a Flood</h2>
         <ul>
-          <li className="urgent"><strong>Move to Higher Ground Immediately!</strong></li>
-          <li>Avoid walking or driving through flood waters
-            <span className="warning">Just 6 inches of moving water can knock you down</span>
-          </li>
+          <li>Move to higher ground immediately if advised</li>
+          <li>Avoid walking or driving through flood waters</li>
           <li>Stay away from power lines and electrical wires</li>
-          <li>Turn off utilities at main switches if instructed</li>
-          <li>Follow evacuation orders promptly</li>
-          <li>Keep children away from flood waters</li>
+          <li>Turn off utilities if instructed to do so</li>
+          <li>Keep monitoring news and emergency channels</li>
         </ul>
-      </section>
+        <div className="video-embed">
+    <h3>Watch: What to do during a flood</h3>
+    <iframe 
+      width="560" 
+      height="315" 
+      src="https://www.youtube.com/embed/rV1iqRD9EKY?si=PUCqf3VS2OEuI-jt" 
+      title="Emergency Kit Preparation"
+      frameBorder="0" 
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+      allowFullScreen>
+    </iframe>
+  </div>
+      </div>
 
-      <section className="guidelines-section">
-        <h3>After a Flood</h3>
+      <div className="guidelines-section">
+        <h2>After a Flood</h2>
         <ul>
           <li>Wait for official word that it's safe to return home</li>
-          <li>Avoid flood waters - they may be contaminated</li>
-          <li>Document damage for insurance purposes
-            <ul className="sub-list">
-              <li>Take photos of all damage</li>
-              <li>Make a detailed list of damaged items</li>
-            </ul>
-          </li>
+          <li>Document damage with photos for insurance</li>
           <li>Clean and disinfect everything that got wet</li>
-          <li>Watch for animals, especially snakes</li>
-          <li>Be aware of the risk of electrocution</li>
+          <li>Watch for hazards like weakened roads and contaminated water</li>
+          <li>Take care of your health and seek medical care if needed</li>
         </ul>
-      </section>
-
-      <section className="guidelines-section emergency-contacts">
-        <h3>Emergency Contacts</h3>
-        <ul>
-          <li>Emergency Services: <a href="tel:112">112</a></li>
-          <li>National Disaster Response Force: <a href="tel:01124363260">011-24363260</a></li>
-          <li>Flood Control Room: <a href="tel:1800223346">1800-22-3346</a></li>
-        </ul>
-      </section>
+      </div>
+      <div className="emergency-contacts">
+        <h2>Emergency Contacts</h2>
+        <div className="contact-grid">
+          <div className="contact-item">
+            <h3>Emergency Services</h3>
+            <p>112</p>
+          </div>
+          <div className="contact-item">
+            <h3>Flood Control Room</h3>
+            <p>1800-123-4567</p>
+          </div>
+          <div className="contact-item">
+            <h3>Medical Emergency</h3>
+            <p>108</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
-}
+};
 
-export default SafetyGuidelines; 
+export default SafetyGuidelines;
