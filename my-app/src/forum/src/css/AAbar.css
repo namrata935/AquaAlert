@@ -1,88 +1,154 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+/* Navbar Container */
 .aabar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    background-color: aliceblue;
-    width: 100%;
-
-    position: sticky;
-    z-index:1000;
-    top: 50px;
-    box-shadow: 0px 5px 8px -9px rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(90deg, #5A62DB, #9C67E4); /* Gradient background */
+  width: 100%;
+  position: sticky;
+  z-index: 1000;
+  top: 0px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  border-radius: 10px;
+  transition: all 0.3s ease;
 }
+
+/* Navbar Hover Effect */
+.aabar:hover {
+  background: linear-gradient(90deg, #9C67E4, #5A62DB); /* Hover Gradient */
+  transform: scale(1.02); /* Slight hover effect */
+}
+
+/* Logo */
 .aaHeader__logo > img {
-    height: 50px;
-    margin-right: 20px;
-    padding: 0;
+  height: 55px;
+  margin-right: 20px;
+  padding: 0;
+  transition: all 0.3s ease;
 }
+
+.aaHeader__logo > img:hover {
+  transform: rotate(360deg); /* Fun hover effect for logo */
+}
+
+/* Icons Section */
 .aaHeader__icons {
-    display: flex;
-    margin-right: 20px;
-    cursor: pointer;
+  display: flex;
+  gap: 25px;
+  align-items: center;
 }
+
+/* Icon Styles */
 .aaHeader__icon > .MuiSvgIcon-root {
-    color: gray;
-    cursor: pointer;
-    font-size: xx-large;
-    padding: 5px 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.8rem;
+  padding: 5px 20px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
 }
+
 .aaHeader__icon > .MuiSvgIcon-root:hover {
-    color: #5A62DB;
-    font-size: xx-large;
-    border-radius: 10px;
-    background-color: lightgray;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+  transform: scale(1.1); /* Slight scaling effect */
 }
+
+/* Search Bar */
 .aaHeader__input {
-    display: flex;
-    align-items: center;
-    border: 1px solid lightgray;
-    padding: 5px;
-    border-radius: 5px;
-
+  display: flex;
+  align-items: center;
+  border: 2px solid #ddd;
+  padding: 8px 15px;
+  border-radius: 25px;
+  background-color: #fff;
+  transition: all 0.3s ease;
 }
 
-.aaHeader__input >input {
-    background-color: transparent;
-    outline: none;
-    border: none;
-    color: rgb(49, 49, 49);
-
+.aaHeader__input:hover {
+  border-color: #5A62DB; /* Change border color on hover */
 }
-.aaHeader__input > .MuiSvgIcon-root {
-   
-    color: gray;
 
+.aaHeader__input > input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: #333;
+  font-size: 1rem;
+  margin-right: 10px;
 }
+
+/* Avatar & Profile Actions */
 .aaHeader__rem {
-    display: flex;
-    align-items: right;
-    margin-left: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
+
 .aaHeader__rem > .aaHeader__avatar {
-    cursor: pointer;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+  transition: all 0.3s ease;
 }
+
+.aaHeader__rem > .aaHeader__avatar:hover {
+  transform: scale(1.1);
+  border-color: #5A62DB;
+}
+
 .aaHeader__rem > .MuiSvgIcon-root {
-    font-size: xx-large;
-    color: gray;
-    margin-left: 25px;
-    cursor: pointer;
+  font-size: 2rem;
+  color: white;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
+
 .aaHeader__rem > .MuiSvgIcon-root:hover {
-    color: #5A62DB;
+  color: #5A62DB;
+  transform: rotate(180deg); /* Icon spin on hover */
 }
+
+/* Button Styles */
 .aaHeader__rem > .MuiButton-root {
-    color: white;
-    margin-left: 25px;
-    text-transform: inherit;
-    background-color: #5A62DB;
-    border-radius:20px ;
-    cursor: pointer;
+  background-color: #5A62DB;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
+
 .aaHeader__rem > .MuiButton-root:hover {
-    color: white;
-    background-color: #5A62DB;
+  background-color: #4b53b5;
 }
+
+
+
 .modal__title {
     display: flex;
     align-items: center;
@@ -160,12 +226,12 @@
   }
   
   .modal__btn > .cancle {
-    margin-left: auto;
     border: none;
-    margin-top: 5px;
     outline: none;
-    color: gray;
-    font-weight: 500;
+    margin-top: 5px;
+    background-color: #db5a69;
+    color: white;
+    font-weight: 700;
     padding: 10px;
     margin-right: 10px;
     border-radius: 33px;

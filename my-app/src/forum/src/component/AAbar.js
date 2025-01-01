@@ -53,24 +53,18 @@ function AAbar() {
   return (
     <div className='aabar'>
       <div className='aaHeader__logo'>
-        <img 
-          src='/img/logo.png'
-          alt=''
-        />
+        
       </div>
       
       <div className='aaHeader__icons'>
         
       </div>
-      <div className='aaHeader__input'>
-        <SearchIcon />
-        <input type='text' placeholder='Search AquaAlert' />
-      </div>
+      
       <div className='aaHeader__rem'>
         <div className='aaHeader__avatar'>
             <Avatar onClick = {()=> auth.signOut()} src={user.photo} />
         </div>
-        <LanguageIcon />
+       
         <Button onClick={() =>setOpenModal(true)}>Create Post</Button>
         <Modal 
             isOpen={openModal}
@@ -82,25 +76,37 @@ function AAbar() {
             >
             <div className='modal__title'>
                 <h5>Create Post</h5> 
-                <h5>Share location link</h5>
+               
                 </div>
                 <div className='modal__info'>
                     <Avatar className="avatar" src={user.photo}></Avatar>
                 <p>{user.displayName?user.displayName : user.email} posted</p>
                 <div className="modal__scope">
-                    <PeopleAltOutlinedIcon />
-                    <p>Public</p>
-                    <ExpandMore />
+                    
                 </div>
                 </div>
                 <div className="modal__field">
-                    <Input required value={input}
-              onChange={(e) => setInput(e.target.value)} type="text" placeholder="Share your ideas, requests, or updates on flood relief efforts."/>
+  <textarea
+    required
+    value={input}
+    onChange={(e) => setInput(e.target.value)}
+    placeholder="Share your ideas, requests, or updates on flood relief efforts."
+    rows="5"  // You can adjust the number of rows as per your requirement
+    style={{
+      width: '100%',
+      padding: '10px',
+      border: '1px solid #ccc',
+      borderRadius: '4px',
+      fontSize: '16px',
+      resize: 'vertical',  // Optional: allows the user to resize the textarea vertically
+    }}
+  />
+
                 
                 <div className="modal__fieldLink">
                 <LinkIcon />
                     <Input value={inputUrl}
-                onChange={(e) => setInputUrl(e.target.value)} type="text" placeholder="Optional: include a link to your address"/>
+                onChange={(e) => setInputUrl(e.target.value)} type="text" placeholder="Optional: include a link"/>
                 </div>
                 </div>
                 <div className="modal__btn">
