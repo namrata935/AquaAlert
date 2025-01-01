@@ -19,6 +19,7 @@ const Background = () => {
         return 'url(/img/backg.png)';
       case '/safety-guidelines':
         return 'url(/img/backg.png)';
+    
       default:
         return 'url(/img/backg.png)';
     }
