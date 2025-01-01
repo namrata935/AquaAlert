@@ -5,7 +5,7 @@ from joblib import load
 import base64
 
 # Directory where models and processed data are saved
-model_dir = './models'
+model_dir = './newModels'
 
 # Function to encode a local image to Base64
 def get_base64_image(image_path):
@@ -13,7 +13,7 @@ def get_base64_image(image_path):
         return base64.b64encode(img_file.read()).decode()
 
 # Add custom CSS for navbar and background image
-background_image = get_base64_image("flood.jpg")  # Make sure flood.jpg is in the same directory
+background_image = get_base64_image("flood.jpg")  # Ensure flood.jpg is in the same directory
 
 # Add custom CSS for styling
 st.markdown(
@@ -54,6 +54,14 @@ st.markdown(
             background: none;
         }}
 
+        /* Title styling */
+        .title {{
+            color: rgb(255, 255, 255);  /* Blue title color */
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+        }}
+
         /* Styling for selectbox and input fields */
         div[data-testid="stSelectbox"] label, 
         div[data-testid="stNumberInput"] label {{
@@ -75,11 +83,14 @@ st.markdown(
     <div class="background"></div>
     <div class="navbar">
         <div>AquaAlert</div>
-        <div><a href="/">Home</a></div>
+        <div><a href="http://localhost:3000">Home</a></div>
     </div>
     """,
     unsafe_allow_html=True
 )
+
+# Main Content
+st.markdown('<div class="title">Flood Prediction for Indian Subdivisions</div>', unsafe_allow_html=True)
 
 # List of subdivisions
 subdivisions = [
@@ -96,9 +107,6 @@ subdivisions = [
     "North Interior Karnataka", "South Interior Karnataka", 
     "Kerala", "Lakshadweep"
 ]
-
-# Main Content
-st.title("Flood Prediction for Indian Subdivisions")
 
 # Dropdown for subdivision selection
 place_name = st.selectbox("Select a subdivision:", subdivisions)
