@@ -13,6 +13,7 @@ const Navbar = () => {
         <a href="http://localhost:8501" target="_blank" rel="noopener noreferrer">
           Flood Prediction
         </a>
+        <Link to="/severity-index">Severity Index</Link>
         <Link to="/community-forum">Community Forum</Link>
         <Link to="/donation">Donation</Link>
         <Link to="/safety-guidelines">Safety Guidelines</Link>

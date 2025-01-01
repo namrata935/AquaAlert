@@ -8,6 +8,7 @@ import RegisterVolunteers from "./pages/RegisterVolunteers"; // Create this comp
 import CommunityForum from "./forum/src/App.js";
 import Donation from "./pages/Donation";
 import SafetyGuidelines from "./pages/SafetyGuidelines";
+import SeverityIndex from "./pages/SeverityIndex";
 import "./App.css";
 import {store} from './forum/src/app/store.js'
 
@@ -27,6 +28,7 @@ const App = () => {
             <Route path="/community-forum" element={<CommunityForum />} />
             <Route path="/donation" element={<Donation />} />
             <Route path="/safety-guidelines" element={<SafetyGuidelines />} />
+            <Route path="/severity-index" element={<SeverityIndex />} />
           </Routes>
         </div>
       </div>
