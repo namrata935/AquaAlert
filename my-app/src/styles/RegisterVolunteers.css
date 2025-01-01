@@ -1,88 +1,122 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9; /* Soft light background */
-  }
-  
-  .register-container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #ffffff; /* White background for the form */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
-    border-radius: 8px; /* Rounded corners */
-  }
-  
-  .register-title {
-    text-align: center;
-    color: #333; /* Dark gray for title */
-    margin-bottom: 20px;
-  }
-  
-  .register-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px; /* Space between form groups */
-  }
-  
-  .form-group {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .form-group label {
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  .form-group input {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 14px;
-  }
-  
-  .button-group {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-  }
-  
-  button {
-    padding: 10px 15px;
-    background-color: #148de4; /* Primary blue */
-    color: #fff; /* White text */
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #0b73b1; /* Darker blue on hover */
-  }
-  
-  .volunteers-title {
-    text-align: center;
-    color: #333;
-    margin-top: 30px;
-  }
-  
-  .volunteers-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 20px 0;
-  }
-  
-  .volunteers-list li {
-    background-color: #f9f9f9; /* Light gray for list items */
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-bottom: 10px;
-  }
-  label {
-    color: #333; /* Ensure this contrasts with the background */
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9; /* Soft light background */
+}
+
+.register-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff; /* White background for the form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.register-title {
+  text-align: center;
+  color: #333; /* Dark gray for title */
+  margin-bottom: 20px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between form groups */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.button-group-inline {
+  display: flex;
+  gap: 10px; /* Space between the buttons */
+}
+
+.button-group-inline button {
+  padding: 10px 15px;
+  background-color: #148de4; /* Primary blue */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.button-group-inline button:hover {
+  background-color: #0b73b1; /* Darker blue on hover */
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #148de4; /* Primary blue */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0b73b1; /* Darker blue on hover */
+}
+
+.volunteers-title {
+  text-align: center;
+  color: #333;
+  margin-top: 30px;
+}
+
+.volunteers-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.volunteers-list li {
+  background-color: #f9f9f9; /* Light gray for list items */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+label {
+  color: #333; /* Ensure this contrasts with the background */
+}
+
+/* Add styles for the select element */
+.form-group select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+.form-group select[multiple] {
+  height: 100px; /* Adjust height for better usability */
+}

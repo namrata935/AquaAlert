@@ -26,7 +26,7 @@ const Navbar = () => {
           <span>Volunteers</span>
           {showDropdown && (
             <div className="dropdown-content">
-              <Link to="/find-volunteers">Find Volunteers</Link>
+              <Link to="/find-volunteer">Find Volunteers</Link>
               <Link to="/register-volunteer">Register as Volunteer</Link>
             </div>
           )}
