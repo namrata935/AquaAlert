@@ -10,15 +10,15 @@ const Background = () => {
       case '/':
         return 'url(/img/backg.png)';
       case '/register-volunteer':
-        return 'url(/path/to/register-volunteer-background.jpg)';
+        return 'url(/img/backg.png)';
       case '/find-volunteer':
-        return 'url(/path/to/find-volunteer-background.jpg)';
+        return 'url(/img/backg.png)';
       case '/community-forum':
         return 'linear-gradient(135deg, #6a11cb, #2575fc)';
       case '/donation':
-        return 'url(/path/to/donation-background.jpg)';
+        return 'url(/img/backg.png)';
       case '/safety-guidelines':
-        return 'url(/path/to/safety-guidelines-background.jpg)';
+        return 'url(/img/backg.png)';
       default:
         return 'url(/img/backg.png)';
     }
