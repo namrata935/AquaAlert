@@ -20,7 +20,7 @@ const Background = () => {
       case '/safety-guidelines':
         return 'url(/path/to/safety-guidelines-background.jpg)';
       default:
-        return 'url(/path/to/default-background.jpg)';
+        return 'url(/img/backg.png)';
     }
   };
 
