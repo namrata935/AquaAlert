@@ -1,89 +1,71 @@
-/* FindVolunteers.css */
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
+.find-volunteers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
   }
   
-  h1 {
+  .card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
     text-align: center;
-    color: #333;
-    margin-top: 20px;
   }
   
-  h2 {
-    color: #555;
-    margin-top: 20px;
+  .card h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
   }
   
-  label {
-    font-weight: bold;
-    color: #555;
-  }
-  
-  input[type="text"] {
-    padding: 10px;
+  .input-container {
     margin: 10px 0;
+  }
+  
+  .input-container input {
+    padding: 8px;
+    margin-left: 10px;
+    width: 80%; /* Adjusted width to make the text box less wide */
+    max-width: 300px; /* Optional: Set a maximum width for consistency */
     border: 1px solid #ccc;
     border-radius: 4px;
-    width: calc(100% - 24px);
-    max-width: 400px;
   }
   
-  button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #fff;
+  
+  .location-btn {
     background-color: #007bff;
+    color: white;
     border: none;
-    border-radius: 4px;
+    padding: 10px 15px;
+    margin: 10px 0;
     cursor: pointer;
-    transition: background-color 0.3s;
+    border-radius: 4px;
   }
   
-  button:hover {
+  .location-btn:hover {
     background-color: #0056b3;
   }
   
-  p {
-    font-size: 14px;
-    color: #555;
-    margin: 5px 0;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  ul li {
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    background-color: #fff;
-  }
-  
-  ul li strong {
-    color: #333;
+  .location-info {
+    margin: 20px 0;
   }
   
   .map-container {
-    margin: 20px auto;
-    width: 90%;
-    max-width: 800px;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
+    margin: 20px 0;
   }
   
-  #map {
-    height: 400px;
-    width: 100%;
+  .volunteer-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .volunteer-item {
+    background: #f1f1f1;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
   }
   
