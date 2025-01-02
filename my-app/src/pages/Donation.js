@@ -65,6 +65,12 @@ const Donation = () => {
       logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbeUyVh0-Sm22Cchxq6p8aHi52QymZa2ED9g&s', 
       upiId: '7975404894@ybl' 
     },
+    { 
+      id: 9, 
+      name: 'Kerela CM Distress Relief Fund', 
+      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Government_of_Kerala_Logo.svg/1200px-Government_of_Kerala_Logo.svg.png', 
+      upiId: 'cmdrfkerala@sbi' 
+    },
   ];
 
   // Function to generate UPI QR code
