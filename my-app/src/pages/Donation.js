@@ -191,10 +191,7 @@ const Donation = () => {
 
       {/* Select NGO Tab */}
       <div className={`tab-content ${activeTab === 0 ? 'active' : ''}`}>
-        <div className="donation-goal">
-          <h2>Today's Donation Goal: ₹{donationGoal}</h2>
-          <p>{totalDonations} of ₹{donationGoal} donated</p>
-        </div>
+        
 
         <div className="ngo-list">
           {ngos.map(ngo => (

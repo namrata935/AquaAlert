@@ -7,7 +7,9 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <div className="navbar-logo">AquaAlert</div>
+      <div className="navbar-logo">
+      <p>AquaAlert</p>
+      </div>
       <div className="navbar-links">
         <Link to="/">Home</Link>
         <a href="http://localhost:8501" target="_blank" rel="noopener noreferrer">
