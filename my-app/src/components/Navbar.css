@@ -16,6 +16,7 @@
 }
 
 /* Navbar logo styling */
+/* Navbar logo styling */
 .navbar-logo {
   font-size: 24px;
   font-weight: bold;
@@ -27,11 +28,11 @@
   align-items: center;
 }
 
-/* Adjust logo size for mobile view */
-.navbar-logo .fa-typo3 {
-  margin-left: 0.5rem;
-  font-size: 1.8rem;
+.navbar-logo img {
+  max-width: 150px; /* Adjust the maximum width as needed */
+  height: 60px; /* Keep the aspect ratio intact */
 }
+
 
 /* Navbar links container */
 .navbar-container {

@@ -1,7 +1,7 @@
 // src/utils/fetchWeather.js
 import axios from "axios";
 
-const API_KEY = "your_openweather_api_key"; // Replace with your actual OpenWeather API key
+
 
 export const fetchWeatherData = async (location) => {
   try {
